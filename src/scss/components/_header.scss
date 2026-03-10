@@ -1,0 +1,60 @@
+.title {
+    font-size: 1.5rem;
+    position: relative;
+
+    a {
+        color: var(--clr-primary);
+    }
+
+    span {
+        color: var(--clr-secondary);
+        font-weight: 400;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 1ch;
+        top: 0;
+        left: calc(100% + 2px);
+        bottom: 0;
+        background-color: var(--clr-txt);
+        animation-name: blink;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-direction: alternate;
+    }
+}
+
+header nav {
+    display: flex;
+    gap: var(--spacing);
+
+    a {
+        color: var(--clr-secondary);
+        border-bottom: none;
+
+        &::before,
+        &::after {
+            padding-inline: var(--spacing);
+        }
+        &::before {
+            content: '[';
+        }
+        &::after {
+            content: ']';
+        }
+
+        &:hover {
+            color: var(--clr-accent);
+            font-weight: 700;
+        }
+    }
+}
+
+/* prettier-ignore */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

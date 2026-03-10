@@ -1,0 +1,27 @@
+@use 'reset';
+@use 'typography';
+@use 'layout';
+@use 'components';
+
+:root {
+    --clr-bg: #000;
+    --clr-txt: #fff;
+    --clr-primary: #fff;
+    --clr-secondary: #6f6f6f;
+    --clr-accent: #0c8;
+
+    --spacing: 0.5rem;
+    --gaps: calc(var(--spacing) * 2);
+    --gaps: calc(var(--spacing) * 1);
+}
+
+* {
+    transition: color, background-color, font-weight, border;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+body {
+    background: var(--clr-bg);
+    color: var(--clr-txt);
+}

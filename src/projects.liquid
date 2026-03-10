@@ -1,0 +1,11 @@
+---
+layout: base.liquid
+title: My Projects
+---
+
+<h2>{{ title }}</h2>
+<ul class="project-list">
+    {% for item in collections.project %}
+        <li><a href="{{ item.url }}">{{ item.data.title }}</a> - {{ item.data.description }}</li>
+    {% endfor %}
+</ul>

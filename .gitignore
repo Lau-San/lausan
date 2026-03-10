@@ -1,0 +1,6 @@
+.direnv
+.devenv
+
+dist
+
+node_modules
