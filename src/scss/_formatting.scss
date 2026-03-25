@@ -1,0 +1,22 @@
+.tags,
+.status {
+    margin-bottom: 1.5rem;
+    color: var(--clr-secondary);
+}
+.status span {
+    background: var(--clr-primary);
+    color: var(--clr-bg);
+    padding-inline: 0.5rem;
+    font-weight: 700;
+}
+.tag {
+    background: var(--clr-surface);
+    color: var(--clr-primary);
+    padding-inline: 0.5rem;
+    border-bottom: 1px solid var(--clr-primary);
+}
+.description {
+    background: var(--clr-surface);
+    padding: calc(var(--spacing) * 2);
+    margin-bottom: 1.5rem;
+}

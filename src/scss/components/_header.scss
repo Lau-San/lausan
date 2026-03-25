@@ -3,11 +3,11 @@
     position: relative;
 
     a {
-        color: var(--clr-primary);
+        color: var(--clr-txt);
     }
 
     span {
-        color: var(--clr-secondary);
+        color: var(--clr-txt-dimmed);
         font-weight: 400;
     }
 
@@ -18,7 +18,7 @@
         top: 0;
         left: calc(100% + 2px);
         bottom: 0;
-        background-color: var(--clr-txt);
+        background-color: var(--clr-txt-main);
         animation-name: blink;
         animation-duration: 0.9s;
         animation-iteration-count: infinite;
@@ -32,7 +32,7 @@ header nav {
     gap: var(--spacing);
 
     a {
-        color: var(--clr-secondary);
+        color: var(--clr-txt-main);
         border-bottom: none;
 
         &::before,
@@ -47,7 +47,7 @@ header nav {
         }
 
         &:hover {
-            color: var(--clr-accent);
+            color: var(--clr-secondary);
             font-weight: 700;
         }
     }

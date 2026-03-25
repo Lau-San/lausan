@@ -17,7 +17,7 @@
   ];
   hostname = "nixos";
   username = "laura";
-  git_root = null;
+  git_root = "/home/laura/Projects/development/web/lausan";
   secretspec = null;
 };
     in
@@ -54,7 +54,7 @@
   ];
   hostname = "nixos";
   username = "laura";
-  git_root = null;
+  git_root = "/home/laura/Projects/development/web/lausan";
   secretspec = null;
 };
       devenv =

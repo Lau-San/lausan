@@ -1,0 +1,12 @@
+---
+layout: base.liquid
+---
+
+<h2>{{ title }}</h2>
+
+<div class="project status">Status: <span>{{ status }}</span></div>
+<div class="project tags">Tags: {% for t in project_tags %}<span class="tag">{{ t }}</span> {% endfor %}</div>
+
+<div class="project description">{{ description }}</div>
+
+{{ content }}

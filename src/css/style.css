@@ -57,28 +57,30 @@ h3 {
 }
 
 h2 {
-  color: var(--clr-accent);
-  padding-bottom: var(--spacing);
-  border-bottom: 2px solid var(--clr-accent);
+  color: var(--clr-secondary);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 h3 {
-  margin-bottom: 1rem;
+  color: var(--clr-secondary);
+  font-weight: 400;
   width: fit-content;
+  margin-top: 3.3rem;
   margin-bottom: 2rem;
 }
 
 /* prettier-ignore */
 a {
-  color: var(--clr-accent);
+  color: var(--clr-primary);
   text-decoration: none;
   border-bottom: 2px solid var(--clr-bg);
 }
 a:hover {
   font-weight: 700;
-  border-color: var(--clr-accent);
+  color: var(--clr-secondary);
+  border-color: var(--clr-secondary);
 }
 
 p {
@@ -101,7 +103,33 @@ li::before {
   font-weight: 700;
   line-height: 1.8;
   margin-right: 2ch;
+  color: var(--clr-primary);
+}
+
+.tags,
+.status {
+  margin-bottom: 1.5rem;
   color: var(--clr-secondary);
+}
+
+.status span {
+  background: var(--clr-primary);
+  color: var(--clr-bg);
+  padding-inline: 0.5rem;
+  font-weight: 700;
+}
+
+.tag {
+  background: var(--clr-surface);
+  color: var(--clr-primary);
+  padding-inline: 0.5rem;
+  border-bottom: 1px solid var(--clr-primary);
+}
+
+.description {
+  background: var(--clr-surface);
+  padding: calc(var(--spacing) * 2);
+  margin-bottom: 1.5rem;
 }
 
 .wrapper {
@@ -117,8 +145,9 @@ li::before {
 header,
 main,
 aside {
-  border: 2px solid var(--clr-accent);
-  padding: var(--spacing);
+  background: var(--clr-surface);
+  border: 2px solid var(--clr-border);
+  padding: calc(var(--spacing) * 2);
 }
 
 header {
@@ -144,7 +173,7 @@ aside {
 
 footer {
   text-align: center;
-  color: var(--clr-secondary);
+  color: var(--clr-txt-dimmed);
   padding-block: var(--spacing);
 }
 
@@ -153,10 +182,10 @@ footer {
   position: relative;
 }
 .title a {
-  color: var(--clr-primary);
+  color: var(--clr-txt);
 }
 .title span {
-  color: var(--clr-secondary);
+  color: var(--clr-txt-dimmed);
   font-weight: 400;
 }
 .title::after {
@@ -166,7 +195,7 @@ footer {
   top: 0;
   left: calc(100% + 2px);
   bottom: 0;
-  background-color: var(--clr-txt);
+  background-color: var(--clr-txt-main);
   animation-name: blink;
   animation-duration: 0.9s;
   animation-iteration-count: infinite;
@@ -179,7 +208,7 @@ header nav {
   gap: var(--spacing);
 }
 header nav a {
-  color: var(--clr-secondary);
+  color: var(--clr-txt-main);
   border-bottom: none;
 }
 header nav a::before, header nav a::after {
@@ -192,7 +221,7 @@ header nav a::after {
   content: "]";
 }
 header nav a:hover {
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
   font-weight: 700;
 }
 
@@ -207,10 +236,12 @@ header nav a:hover {
 }
 :root {
   --clr-bg: #000;
-  --clr-txt: #fff;
-  --clr-primary: #fff;
-  --clr-secondary: #6f6f6f;
-  --clr-accent: #0c8;
+  --clr-surface: #3333dd11;
+  --clr-txt-main: #fafafa;
+  --clr-txt-dimmed: #aaf8;
+  --clr-primary: #55f;
+  --clr-secondary: #f5f;
+  --clr-border: #55f7;
   --spacing: 0.5rem;
   --gaps: calc(var(--spacing) * 2);
   --gaps: calc(var(--spacing) * 1);
@@ -224,7 +255,7 @@ header nav a:hover {
 
 body {
   background: var(--clr-bg);
-  color: var(--clr-txt);
+  color: var(--clr-txt-main);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,8 +11,9 @@
 header,
 main,
 aside {
-    border: 2px solid var(--clr-accent);
-    padding: var(--spacing);
+    background: var(--clr-surface);
+    border: 2px solid var(--clr-border);
+    padding: calc(var(--spacing) * 2);
 }
 
 header {
@@ -30,6 +31,7 @@ header {
 
 main {
     flex: 4;
+    // padding-top: calc(var(--spacing) * 4);
 }
 
 aside {
@@ -38,6 +40,6 @@ aside {
 
 footer {
     text-align: center;
-    color: var(--clr-secondary);
+    color: var(--clr-txt-dimmed);
     padding-block: var(--spacing);
 }

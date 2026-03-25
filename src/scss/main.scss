@@ -1,14 +1,17 @@
 @use 'reset';
 @use 'typography';
+@use 'formatting';
 @use 'layout';
 @use 'components';
 
 :root {
     --clr-bg: #000;
-    --clr-txt: #fff;
-    --clr-primary: #fff;
-    --clr-secondary: #6f6f6f;
-    --clr-accent: #0c8;
+    --clr-surface: #3333dd11;
+    --clr-txt-main: #fafafa;
+    --clr-txt-dimmed: #aaf8;
+    --clr-primary: #55f;
+    --clr-secondary: #f5f;
+    --clr-border: #55f7;
 
     --spacing: 0.5rem;
     --gaps: calc(var(--spacing) * 2);
@@ -23,5 +26,5 @@
 
 body {
     background: var(--clr-bg);
-    color: var(--clr-txt);
+    color: var(--clr-txt-main);
 }
